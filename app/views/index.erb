@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Welcome to URL Shortener</h1>
+  <p>It's neat.</p>
+
+<div id='errors'>
+<% if @errors %>
+  <% @errors.full_messages.each do |error|%>
+  <%= error %>
+    <%end%>
+<%end%>
+</div>
+
+<form action='/shorten' method ='post'>
+  <input type='text' name='url' placeholder="Insert url here"><br>
+  <input type='submit' value='Get shorty!'>
+</form>
+
+  
+</div>
